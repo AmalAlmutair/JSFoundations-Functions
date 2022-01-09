@@ -7,8 +7,13 @@
  * greet("Hamza") logs "Hello Hamza"
  */
 function greet(name) {
+
+  console.log("Hello "+name)
+
+
   // Your code here
 }
+greet("Hamza")
 
 /**
  * isOdd(n):
@@ -20,9 +25,13 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  // Your code here
+  return n%2===1;
 }
+  
+  
+  // Your code here
 
+isOdd(7)
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -33,8 +42,10 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
+ return Math.floor(n/2);
   // Your code here
 }
+oddsSmallerThan(7)
 
 /**
  * squareOrDouble(n):
@@ -48,6 +59,8 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+return isOdd(n) ? n**2:n*2;
+
 }
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
